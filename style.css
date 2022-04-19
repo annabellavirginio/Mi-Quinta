@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    position: relative;
+    min-height: 100%;
+}
+@font-face {
+    font-family: "Prata";
+    src: url("./fonts/RobotoSlab-Regular.ttf");
+}
+.bodyIndex{
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 200px 400px 400px 150px;
+    position: relative;
+}
+header{
+    background-color: rgb(220, 231, 199);
+    display: grid;
+    grid-column: 1/4;
+    height: 250px;
+}
+.iconofacebook{
+    width: 40px;
+    margin-top: 10px;
+}
+.logoquinta{
+    width: 200px;
+    margin: auto;
+}
+.barraNav__lista{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.mainIndex{
+    margin: auto;
+    display: grid;
+    grid-column: 1/4;  
+}
+.mainIndex__contenido{
+    width: fit-content;
+    display: grid;
+    margin: auto;
+    grid-column: 1/4;
+}
+.titulo{
+    color: black;
+    padding: 30px;
+    text-align: center; 
+    font-family: "Prata";
+    font-size: 40px; 
+}
+.descripcionIndex{
+    text-align: center;
+    font-family: "Prata";
+    font-size: 17px;
+}
+footer{
+    background-color: rgb(224, 203, 149);
+    display: grid;
+    height: 150px;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    justify-content: space-evenly;
+    grid-column: 1/4;
+    
+}
+.ulFooter{
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ulFooter__lista{
+    display: flex;
+    margin-top: 10px;
+    
+}
+.tituloFooter{
+    text-align: center;
+    font-family: "Prata";
+    font-size: 25px;
+    margin-top: 20px;
+}
+.mainIndex__fotos{
+    grid-column: 1/4;
+    margin: auto;
+    margin-top: 50px;
+}
+.fotohome{
+    width: 360px;
+}
+.bodyInfo{
+    height: 900px;
+    position: relative;
+}
+.mainInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 300px;
+    height: fit-content;
+    position: relative;
+
+}
+.tituloInfo{
+    grid-column: 1/3;
+    color: black;
+    padding-top: 30px;
+    text-align: center; 
+    font-family: "Prata";
+    font-size: 40px; 
+}
+section p{
+    font-size: 20px;
+    font-family: "Prata";
+}
+.cardInfo uno{
+    grid-column: 1/2;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+ .fotoInfo{
+    width: 300px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: auto;  
+}
+.cardInfo dos{
+    width: 500px;
+    display: inline-block; 
+    position: relative;
+    left: 30vh;
+}
+.descripcionInfo{
+    margin: auto;
+    width: fit-content;
+    position: relative; 
+    padding-bottom: 10px;   
+}
+.footerInfo{
+    position: absolute;
+    bottom: 0%;
+}
+.bodyGaleria{
+    height: 1050px;
+    position: relative;
+}
+.galeria{
+    height: 150px;
+    margin: auto;
+    position: relative;
+}
+.fotogaleria{
+    width: 300px;
+    position: relative;
+    left: 100px;
+    margin-top: 10px;
+}
+.bodyEventos{
+    height: 950px;
+    position: relative;
+}
+.mainEventos{
+    display: block;
+}
+.fotoseventos{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.fotoevento{
+    width: 360px;
+    margin: auto;
+    display: inline;
+    align-items: center;
+}
+.textoeventos{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.bodyContacto{
+    height: 950px;
+    position: relative;
+}
+.textoreservas{
+    width: fit-content;
+}
+.contacto{
+    width: fit-content;
+    display: inline-block;
+    position: relative;
+    bottom: 20vh;
+    left: 15vh;
+}
+.ubicacion{
+    width: fit-content;
+    display: inline-block;
+    position: relative;
+    left: 40vh;
+    top: 5vh;
+}
+.subtitulo1{
+    width: fit-content;
+    position: relative;
+    left: 43vh;
+    bottom: 13vh;
+}
+.subtitulo2{
+    width: fit-content;
+    position: relative;
+    bottom: 5vh; 
+}
+
+@media screen and (max-width: 1091px) {
+    .bodyIndex{
+        height: 1600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 200px 380px 380px 380px 150px;
+    display: flex;
+    position: relative; 
+    }
+    .bodyEventos{
+        display: block;
+    }
+    header{
+        width: auto;
+    }
+    .mainIndex__contenido{
+        width: fit-content;
+        display: grid;
+        margin: auto;
+    } 
+    .fotohome{
+        width: 400px;
+        display: flex;
+        padding: 5px;
+    }       
+    .descripcionIndex{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .fotoevento{
+        display: flex;
+        width: 400px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .bodyIndex{
+        height: 1800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 200px 380px 380px 380px 150px;
+    position: relative; 
+    }
+    .bodyEventos{
+        position: relative;
+    }
+    .header1{
+        height: 400px;
+        grid-row: 1/2;
+    }
+    header{
+        height: 400px;
+        width: auto;
+    }
+    a{
+        position: relative;
+        display: inline;
+    }
+    .mainIndex__contenido{
+        width: fit-content;
+        display: grid;
+    }
+    .logoquinta{
+        width: 200px;
+        margin: auto;
+    }
+    .barraNav__lista{
+        display: block;
+        text-align: center;
+    }
+    li{
+        padding: 4px;
+    }
+    .bodyInfo{
+        height: 1000px;
+    }
+    .bodyGaleria{
+        height: 1700px;
+    }
+    .bodyEventos{
+        height: 1000px;
+    }
+    .bodyContacto{
+        height: 1000px;
+    }
+    .fotosevento{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: auto;
+    }
+    .fotoevento{
+        display: flex;
+        width: 100px;
+    }
+}
+@media screen and (max-width: 612px) {
+    .bodyIndex{
+        height: 1800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 200px 380px 380px 380px 150px;
+    position: relative; 
+    }
+    .bodyEventos{
+        position: relative;
+    }
+    .header1{
+        height: 400px;
+        grid-row: 1/2;
+    }
+    header{
+        height: 400px;
+        width: auto;
+    }
+    a{
+        position: relative;
+        display: inline;
+    }
+    .mainIndex__contenido{
+        width: fit-content;
+        display: grid;
+    }
+    .logoquinta{
+        width: 200px;
+        margin: auto;
+    }
+    .barraNav__lista{
+        display: block;
+        text-align: center;
+    }
+    li{
+        padding: 4px;
+    }
+    .bodyInfo{
+        height: 1300px;
+    }
+    .mainInfo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 300px 300px;
+        height: fit-content;
+        position: relative;
+    }
+    .tituloInfo{
+        grid-column: 1;
+    }
+    .cardInfo uno{
+        grid-row: 2/3;
+    }
+    .cardInfo dos{
+        grid-row: 3/4;
+    }
+    .bodyGaleria{
+        height: 1700px;
+    }
+    .bodyEventos{
+        height: 1000px;
+    }
+    .bodyContacto{
+        height: 1000px;
+    }
+    .fotosevento{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: auto;
+    }
+    .fotoevento{
+        display: flex;
+        width: 100px;
+    }
+
+}
