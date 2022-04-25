@@ -105,6 +105,11 @@ footer{
 }
 .fotohome{
     width: 360px;
+    transition: width 2s;
+}
+.fotohome:hover{
+    width: 450px;
+    
 }
 .bodyInfo{
     height: 900px;
