@@ -11,7 +11,7 @@ html{
     src: url("./fonts/RobotoSlab-Regular.ttf");
 }
 .bodyIndex{
-    height: fit-content;
+    height: 950px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 250px 200px 400px 400px 150px;
@@ -157,7 +157,7 @@ section p{
     bottom: 0%;
 }
 .bodyGaleria{
-    height: 1050px;
+    height: 1250px;
     position: relative;
 }
 .galeria{
@@ -236,20 +236,23 @@ section p{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 250px 200px 380px 380px 380px 150px;
-    display: flex;
     position: relative; 
     }
     .bodyEventos{
         display: block;
+    }
+    .header1{
+        grid-row: 1/2;
+        width: auto;
     }
     header{
         width: auto;
     }
     .mainIndex__contenido{
         width: fit-content;
-        display: grid;
-        margin: auto;
-    } 
+        grid-row: 1/4;
+
+    }
     .fotohome{
         width: 400px;
         display: flex;
@@ -364,6 +367,87 @@ section p{
     }
     li{
         padding: 4px;
+    }
+    .bodyInfo{
+        height: 1300px;
+    }
+    .mainInfo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 300px 300px;
+        height: fit-content;
+        position: relative;
+    }
+    .tituloInfo{
+        grid-column: 1;
+    }
+    .cardInfo uno{
+        grid-row: 2/3;
+    }
+    .cardInfo dos{
+        grid-row: 3/4;
+    }
+    .bodyGaleria{
+        height: 1700px;
+    }
+    .bodyEventos{
+        height: 1000px;
+    }
+    .bodyContacto{
+        height: 1000px;
+    }
+    .fotosevento{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: auto;
+    }
+    .fotoevento{
+        display: flex;
+        width: 100px;
+    }
+
+}
+@media screen and (max-width: 414px) {
+    .bodyIndex{
+        height: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 200px 380px 380px 380px 150px;
+    position: relative; 
+    }
+    .bodyEventos{
+        position: relative;
+    }
+    .header1{
+        height: 400px;
+        grid-row: 1/2;
+    }
+    header{
+        height: 400px;
+        width: auto;
+    }
+    a{
+        position: relative;
+        display: inline;
+    }
+    .mainIndex__contenido{
+        width: fit-content;
+        display: grid;
+    }
+    .logoquinta{
+        width: 200px;
+        margin: auto;
+    }
+    .barraNav__lista{
+        display: block;
+        text-align: center;
+    }
+    li{
+        padding: 4px;
+    }
+    .fotohome{
+        width: 280px;
     }
     .bodyInfo{
         height: 1300px;
