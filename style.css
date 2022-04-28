@@ -1,28 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-html{
+/* html{
     position: relative;
     min-height: 100%;
-}
+} */
 @font-face {
     font-family: "Prata";
     src: url("./fonts/RobotoSlab-Regular.ttf");
 }
-.bodyIndex{
+/* .bodyIndex{
     height: 950px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 250px 200px 400px 400px 150px;
     position: relative;
-}
+} */
 header{
     background: linear-gradient(to bottom,rgb(220, 231, 199),white );
-    background-color: rgb(220, 231, 199);
     display: grid;
     grid-column: 1/4;
     height: 250px;
+}
+.navbar-light{
+    text-decoration-color: rgb(241, 64, 64);
+}
+.navbar-toggler{
+    color: rgb(36, 214, 220);
+}
+.nav-link:hover{
+    color: rgb(139, 183, 59);
+}
+.nav-link{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .iconofacebook{
     width: 40px;
@@ -32,14 +39,14 @@ header{
     width: 200px;
     margin: auto;
 }
-.barraNav__lista{
+/* .barraNav__lista{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     width: 50%;
     margin: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+} */
 a{
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -47,7 +54,7 @@ a{
 header a:hover{
     color: rgb(113, 193, 56);
 }
-.mainIndex{
+/* .mainIndex{
     margin: auto;
     display: grid;
     grid-column: 1/4;  
@@ -57,39 +64,59 @@ header a:hover{
     display: grid;
     margin: auto;
     grid-column: 1/4;
-}
+} */
 .titulo{
     color: black;
-    padding: 30px;
-    text-align: center; 
     font-family: "Prata";
     font-size: 40px; 
 }
 .descripcionIndex{
-    text-align: center;
     font-family: "Prata";
     font-size: 17px;
 }
+section.container.container__index{
+    padding: 0%;
+    margin: auto;
+}
+.row__carousel{
+    width: fit-content;
+    margin: auto; 
+}
+.carousel{
+    margin: auto;
+    width: 600px;
+}
 footer{
+    position: relative;
     background-color: rgb(182, 225, 245);
-    display: grid;
-    height: 150px;
-    position: absolute;
-    width: 100%;
-    bottom: 0%;
-    justify-content: space-evenly;
-    grid-column: 1/4;
-    
+    margin-top: 40px;
 }
-.ulFooter{
+.row{
+    align-items: center;
+    --bs-gutter-x: 0%;
+}
+.logofooter{
+    width: 20%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.footer__logos{
     list-style: none;
-    font-size: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
 }
-.ulFooter__lista{
-    display: flex;
+.footer__contacto{
     margin-top: 10px;
+    margin-left: 80px;
+    display: flex;
+    position: relative;
+    flex-direction: column
     
 }
 .tituloFooter{
@@ -112,7 +139,7 @@ footer{
     
 }
 .bodyInfo{
-    height: 900px;
+    height: 800px;
     position: relative;
 }
 .mainInfo{
@@ -168,16 +195,10 @@ section p{
     height: 1250px;
     position: relative;
 }
-.galeria{
-    height: 150px;
-    margin: auto;
-    position: relative;
-}
-.fotogaleria{
-    width: 300px;
-    position: relative;
-    left: 100px;
-    margin-top: 10px;
+
+img.fotogaleria{
+    width: 400px;
+    margin: 10px;
 }
 .bodyEventos{
     height: 950px;
@@ -237,14 +258,32 @@ section p{
     position: relative;
     bottom: 5vh; 
 }
+@media screen and (max-width: 1399px) {
+    img.fotogaleria{
+        width: 350px;
+    }
 
-@media screen and (max-width: 1091px) {
+}
+@media screen and (max-width: 1199px) {
+    img.fotogaleria{
+        width: 290px;
+    }
+
+}
+@media screen and (max-width: 1145px) {
     .bodyIndex{
-        height: 1600px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 250px 200px 380px 380px 380px 150px;
-    position: relative; 
+        height: 1000px;
+    }
+    .logofooter{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .footer__logos{
+        margin-bottom: 10px;
     }
     .bodyEventos{
         display: block;
@@ -259,103 +298,58 @@ section p{
     .mainIndex__contenido{
         width: fit-content;
         grid-row: 1/4;
-
-    }
-    .fotohome{
-        width: 400px;
-        display: flex;
-        padding: 5px;
-    }       
-    .descripcionIndex{
-        padding-left: 10px;
-        padding-right: 10px;
     }
     .fotoevento{
         display: flex;
         width: 400px;
         padding: 5px;
     }
+    .col-sm-5{
+        padding: 0%;
+    }
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 991px) {
     .bodyIndex{
-        height: 1800px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 400px 200px 380px 380px 380px 150px;
-    position: relative; 
+        height: 900px;
     }
     .bodyEventos{
         position: relative;
     }
     .header1{
-        height: 400px;
-        grid-row: 1/2;
+        height: 200px;
+        display: flex;
     }
     header{
-        height: 400px;
+        height: 200px;
         width: auto;
     }
-    a{
-        position: relative;
+    .logofooter{
+        width: 30%;
+        padding: 0%;
         display: inline;
-    }
-    .mainIndex__contenido{
-        width: fit-content;
-        display: grid;
-    }
-    .logoquinta{
-        width: 200px;
-        margin: auto;
-    }
-    .barraNav__lista{
-        display: block;
-        text-align: center;
-    }
-    li{
-        padding: 4px;
-    }
-    .bodyInfo{
-        height: 1000px;
-    }
-    .bodyGaleria{
-        height: 1700px;
-    }
-    .bodyEventos{
-        height: 1000px;
-    }
-    .bodyContacto{
-        height: 1000px;
-    }
-    .fotosevento{
-        display: flex;
+        justify-content: center;
         align-items: center;
-        padding: 0;
-        margin: auto;
+        margin-left: 20px;
+        margin-bottom: 10px;
     }
-    .fotoevento{
+    .row.footer{
         display: flex;
-        width: 100px;
+        justify-content: center;
     }
-}
-@media screen and (max-width: 612px) {
-    .bodyIndex{
-        height: 1800px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 400px 200px 380px 380px 380px 150px;
-    position: relative; 
+    .footer__logos{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
     }
-    .bodyEventos{
+    .footer__contacto{
+        display: flex;
         position: relative;
-    }
-    .header1{
-        height: 400px;
-        grid-row: 1/2;
-    }
-    header{
-        height: 400px;
-        width: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        margin-top: 10px;
+        margin-left: 50px;
     }
     a{
         position: relative;
@@ -365,8 +359,16 @@ section p{
         width: fit-content;
         display: grid;
     }
+    .navbar{
+        display: flex;
+        position: absolute;
+        align-items: center;
+        padding: 5%;
+    }
     .logoquinta{
-        width: 200px;
+        display: flex;
+        position: relative;
+        width: 20%;
         margin: auto;
     }
     .barraNav__lista{
@@ -377,7 +379,7 @@ section p{
         padding: 4px;
     }
     .bodyInfo{
-        height: 1300px;
+        height: 1000px;
     }
     .mainInfo{
         display: grid;
@@ -398,6 +400,12 @@ section p{
     .bodyGaleria{
         height: 1700px;
     }
+    .row>* {
+        width: 50%;
+    }
+    img.fotogaleria{
+        width: 330px;
+    }
     .bodyEventos{
         height: 1000px;
     }
@@ -414,26 +422,211 @@ section p{
         display: flex;
         width: 100px;
     }
-
+    .col-sm-5{
+        padding: 0%;
+    }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 767px) {
     .bodyIndex{
-        height: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 400px 200px 380px 380px 380px 150px;
-    position: relative; 
+        height: 900px;
     }
     .bodyEventos{
         position: relative;
     }
     .header1{
-        height: 400px;
+        height: 200px;
         grid-row: 1/2;
     }
     header{
-        height: 400px;
+        height: 200px;
         width: auto;
+    }
+    section .container__index{
+        height: 700px; 
+    }
+    .row__carousel{
+        width: fit-content;
+        margin: auto; 
+    }
+    .carousel{
+        width: 500px;
+    }
+    .row.footer{
+        display: flex;
+        justify-content: center;
+    }
+    .logofooter{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+  
+    .footer__contacto{
+        display: flex;
+        position: relative;
+        justify-content:space-between;
+        align-items: center;
+        margin-top: 10px;
+    
+    }
+    a{
+        position: relative;
+        display: inline;
+    }
+    .mainIndex__contenido{
+        width: fit-content;
+    }
+    .logoquinta{
+        width: 20%;
+        margin: auto;
+    }
+    .barraNav__lista{
+        display: block;
+        text-align: center;
+    }
+    li{
+        padding: 4px;
+    }
+    .bodyInfo{
+        height: 1000px;
+    }
+    .mainInfo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 300px 300px;
+        height: fit-content;
+        position: relative;
+    }
+    .tituloInfo{
+        grid-column: 1;
+    }
+    .cardInfo uno{
+        grid-row: 2/3;
+    }
+    .cardInfo dos{
+        grid-row: 3/4;
+    }
+    .bodyGaleria{
+        height: 1000px;
+    }
+    .row>* {
+        width: 50%;
+    }
+    img.fotogaleria{
+        width: 240px;
+    }
+    .bodyEventos{
+        height: 1000px;
+    }
+    .bodyContacto{
+        height: 1000px;
+    }
+    .fotosevento{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: auto;
+    }
+    .fotoevento{
+        display: flex;
+        width: 100px;
+    }
+    .col-sm-5{
+        padding: 0%;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .bodyIndex{
+        height: 900px;
+    }
+    .header1{
+        height: 200px;
+    }
+    img.logofooter{
+        width: 45%;
+    }
+    .footer__contacto{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .col-sm-5{
+        padding: 0%;
+    }
+
+}
+@media screen and (max-width: 577px) {
+    .bodyIndex{
+        height: 800px;
+    }
+    .bodyEventos{
+        position: relative;
+    }
+    .header1{
+        height: 150px;
+    }
+    header{
+        height: 200px;
+        width: auto;
+    }
+    .row{
+        display: flex;
+        padding: 0%;
+    }
+    .col-sm-2{
+        padding: 0%;
+    }
+    .col-sm-5{
+        padding: 0%;
+    }
+    .row.footer{
+        display: flex;
+        justify-content: center;
+    }
+    img.logofooter{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .footer__logos{
+        list-style: none;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        align-items: center;
+        width: max-content;
+    }
+    .footer__contacto{
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        font-size: smaller;
+        padding-top: 10px;
+    }
+    section .container__index{
+        width: 400px; 
+        margin: auto;
+    }
+    .carousel{
+        width: 400px;
+    }
+    .row__carousel{
+        width: fit-content;
+        margin: auto; 
+    }
+    .carousel__container{
+        width: fit-content;
+        padding: 0%;
+    }
+    .iconofacebook{
+        margin: 15px;
     }
     a{
         position: relative;
@@ -444,7 +637,92 @@ section p{
         display: grid;
     }
     .logoquinta{
-        width: 200px;
+        width: 150px;
+        margin: auto;
+    }
+    .barraNav__lista{
+        display: block;
+        text-align: center;
+    }
+    li{
+        padding: 4px;
+    }
+    .fotohome{
+        width: 280px;
+    }
+    .bodyInfo{
+        height: 1000px;
+    }
+    .mainInfo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 300px 300px;
+        height: fit-content;
+        position: relative;
+    }
+    .tituloInfo{
+        grid-column: 1;
+    }
+    .cardInfo uno{
+        grid-row: 2/3;
+    }
+    .cardInfo dos{
+        grid-row: 3/4;
+    }
+    .bodyGaleria{
+        height: 1000px;
+    }
+    .row>* {
+        width: 50%;
+    }
+    img.fotogaleria{
+        width: 230px;
+        
+    }
+    .bodyEventos{
+        height: 1000px;
+    }
+    .bodyContacto{
+        height: 1000px;
+    }
+    .fotosevento{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: auto;
+    }
+    .fotoevento{
+        display: flex;
+        width: 100px;
+    }
+    img.logofooter{
+    width: 25%;
+    }
+    }
+@media screen and (max-width: 444px) {
+  
+    .bodyEventos{
+        position: relative;
+    }
+    .header1{
+        height: 200px;
+    }
+    header{
+        height: 200px;
+        width: auto;
+    }
+    img.logofooter{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainIndex__contenido{
+        width: fit-content;
+        display: grid;
+    }
+    .logoquinta{
+        width: 30%;
         margin: auto;
     }
     .barraNav__lista{
@@ -495,5 +773,154 @@ section p{
         display: flex;
         width: 100px;
     }
+    .tituloInfo{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 514px) {
+    .bodyGaleria{
+    height: 1000px;
+    }
+    .row>* {
+        width: 100%;
+        }
+        img.fotogaleria{
+        width: 450px;   
+        }   
+}
+@media screen and (max-width: 435px) {
+    .titulo{
+        font-size: 30px;
+    }
+    .carousel{
+        width: 350px;
+    } 
+    .tituloInfo{
+        font-size: 30px;
+    }
+    .row>* {
+        width: 100%;
+        }
+        img.fotogaleria{
+        width: 390px;   
+        }  
+}
+@media screen and (max-width: 405px) {
+    .titulo{
+        font-size: 30px;
+    }
+    .descripcionIndex{
+        font-size: 10px;
+    }
+    .carousel{
+        width: 300px;
+    } 
+    .tituloInfo{
+        font-size: 30px;
+    }
+    .bodyInfo{
+        height: 1000px;
+    }
+    img.fotogaleria{
+        width: 330px;   
+        }  
+
+}
+@media screen and (max-width: 320px) {
+  
+    .bodyEventos{
+        position: relative;
+    }
+    .header1{
+        height: 150px;
+    }
+    header{
+        height: 200px;
+        width: auto;
+    }
+    .carousel{
+        width: 320px;
+        padding-top: 15px;
+    }
+    .footer{
+        display: flex;
+    }
+    .logofooter{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        position: relative;
+        display: inline;
+    }
+    .mainIndex__contenido{
+        width: fit-content;
+        display: grid;
+    }
+    .logoquinta{
+        width: 40%;
+        margin: auto;
+    }
+    .barraNav__lista{
+        display: block;
+        text-align: center;
+    }
+    li{
+        padding: 4px;
+    }
+    .fotohome{
+        width: 280px;
+    }
+    .bodyInfo{
+        height: 1000px;
+    }
+    .tituloInfo{
+        font-size: 30px;
+    }
+    .mainInfo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 300px 300px;
+        height: fit-content;
+        position: relative;
+    }
+    .tituloInfo{
+        grid-column: 1;
+    }
+    .cardInfo uno{
+        grid-row: 2/3;
+    }
+    .cardInfo dos{
+        grid-row: 3/4;
+    }
+    .bodyGaleria{
+        height: 1700px;
+    }
+    .bodyEventos{
+        height: 1000px;
+    }
+    .bodyContacto{
+        height: 1000px;
+    }
+    .fotosevento{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: auto;
+    }
+    .fotoevento{
+        display: flex;
+        width: 100px;
+    }
+
+}
+@media screen and (max-width: 340px) {
+
+    .carousel{
+        width: 270px;
+    }
+
 
 }
