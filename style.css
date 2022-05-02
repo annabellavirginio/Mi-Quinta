@@ -1,34 +1,20 @@
-/* html{
-    position: relative;
-    min-height: 100%;
-} */
+
 @font-face {
     font-family: "Prata";
     src: url("./fonts/RobotoSlab-Regular.ttf");
 }
-/* .bodyIndex{
-    height: 950px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 250px 200px 400px 400px 150px;
-    position: relative;
-} */
 header{
     background: linear-gradient(to bottom,rgb(220, 231, 199),white );
     display: grid;
     grid-column: 1/4;
     height: 250px;
 }
-.navbar-light{
-    text-decoration-color: rgb(241, 64, 64);
-}
-.navbar-toggler{
-    color: rgb(36, 214, 220);
-}
+
 .nav-link:hover{
-    color: rgb(139, 183, 59);
+    color: rgb(139, 183, 59) !important;
 }
 .nav-link{
+    color: black !important;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .iconofacebook{
@@ -54,17 +40,6 @@ a{
 header a:hover{
     color: rgb(113, 193, 56);
 }
-/* .mainIndex{
-    margin: auto;
-    display: grid;
-    grid-column: 1/4;  
-}
-.mainIndex__contenido{
-    width: fit-content;
-    display: grid;
-    margin: auto;
-    grid-column: 1/4;
-} */
 .titulo{
     color: black;
     font-family: "Prata";
@@ -73,6 +48,7 @@ header a:hover{
 .descripcionIndex{
     font-family: "Prata";
     font-size: 17px;
+    padding-bottom: 40px;
 }
 section.container.container__index{
     padding: 0%;
@@ -193,41 +169,23 @@ section p{
 }
 .bodyGaleria{
     height: 1250px;
-    position: relative;
 }
-
 img.fotogaleria{
     width: 400px;
     margin: 10px;
 }
 .bodyEventos{
-    height: 950px;
-    position: relative;
+    height: 800px;
 }
-.mainEventos{
-    display: block;
+.galeria__eventos{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-.fotoseventos{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.fotoevento{
-    width: 360px;
-    margin: auto;
-    display: inline;
-    align-items: center;
-}
-.textoeventos{
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
+img.fotoeventos{
+    width: 400px;
 }
 .bodyContacto{
-    height: 950px;
+    height: 900px;
     position: relative;
 }
 .textoreservas{
@@ -262,11 +220,17 @@ img.fotogaleria{
     img.fotogaleria{
         width: 350px;
     }
+    img.fotoeventos{
+        width: 350px;
+    }
 
 }
 @media screen and (max-width: 1199px) {
     img.fotogaleria{
         width: 290px;
+    }
+    img.fotoeventos{
+        width: 300px;
     }
 
 }
@@ -299,13 +263,11 @@ img.fotogaleria{
         width: fit-content;
         grid-row: 1/4;
     }
-    .fotoevento{
-        display: flex;
-        width: 400px;
-        padding: 5px;
-    }
     .col-sm-5{
         padding: 0%;
+    }
+    img.fotoeventos{
+        width: 300px;
     }
 }
 
@@ -371,10 +333,7 @@ img.fotogaleria{
         width: 20%;
         margin: auto;
     }
-    .barraNav__lista{
-        display: block;
-        text-align: center;
-    }
+    
     li{
         padding: 4px;
     }
@@ -409,6 +368,10 @@ img.fotogaleria{
     .bodyEventos{
         height: 1000px;
     }
+    img.fotoeventos{
+        width: 320px;
+        margin-bottom: 30px;
+    }
     .bodyContacto{
         height: 1000px;
     }
@@ -417,10 +380,6 @@ img.fotogaleria{
         align-items: center;
         padding: 0;
         margin: auto;
-    }
-    .fotoevento{
-        display: flex;
-        width: 100px;
     }
     .col-sm-5{
         padding: 0%;
@@ -519,20 +478,17 @@ img.fotogaleria{
         width: 240px;
     }
     .bodyEventos{
-        height: 1000px;
+        height: 1100px;
+    }
+    .row.row__eventos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .img.fotoeventos{
+        width: 500px;
     }
     .bodyContacto{
         height: 1000px;
-    }
-    .fotosevento{
-        display: flex;
-        align-items: center;
-        padding: 0;
-        margin: auto;
-    }
-    .fotoevento{
-        display: flex;
-        width: 100px;
     }
     .col-sm-5{
         padding: 0%;
@@ -676,24 +632,19 @@ img.fotogaleria{
         width: 50%;
     }
     img.fotogaleria{
-        width: 230px;
-        
+        width: 230px;  
     }
     .bodyEventos{
-        height: 1000px;
+        height: 800px;
     }
     .bodyContacto{
         height: 1000px;
     }
-    .fotosevento{
+    img.fotoeventos{
         display: flex;
-        align-items: center;
-        padding: 0;
+        width: 300px;
         margin: auto;
-    }
-    .fotoevento{
-        display: flex;
-        width: 100px;
+        margin-bottom: 20px;
     }
     img.logofooter{
     width: 25%;
