@@ -1,0 +1,62 @@
+header{
+    background: linear-gradient(to bottom,rgb(220, 231, 199),white );
+    display: grid;
+    grid-column: 1/4;
+    height: 250px;
+    
+    .logoquinta{
+        width: 200px;
+        margin: auto;
+    }
+    .nav-link{
+        color: black !important;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            &:hover{
+                color: rgb(139, 183, 59) !important;
+            }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header{
+        .navbar{
+            display: flex;
+            position: absolute;
+            align-items: center;
+            padding: 5%;
+        }
+        .logoquinta{
+            display: flex;
+            position: relative;
+            width: 20%;
+            margin: auto;
+        }    
+    }
+}
+@media screen and (max-width: 577px) {
+    header{
+        height: 250px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 444px) {
+    header{
+        height: 250px;
+        width: auto;
+        .logoquinta{
+            width: 30%;
+            margin: auto;
+        }
+    }
+}
+/* ARREGLAR ESTE HEADER */
+@media screen and (max-width: 320px) {
+    header{
+        height: 200px;
+        width: auto;
+        .logoquinta{
+            width: 40%;
+            margin: auto;
+        }
+    }
+}

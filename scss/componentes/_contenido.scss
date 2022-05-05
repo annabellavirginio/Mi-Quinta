@@ -1,0 +1,68 @@
+main{
+    .titulo{
+        color: black;
+        font-family: "Prata";
+        font-size: 40px; 
+    }
+    .descripcionIndex{
+        font-family: "Prata";
+        font-size: 17px;
+        padding-bottom: 40px;
+    }
+    section{
+        .row__carousel{
+            align-items: center;
+            --bs-gutter-x: 0%;
+        }
+        .carousel{
+            margin: auto;
+            width: 600px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {   
+    main{
+        .carousel{
+                margin: auto;
+                width: 450px !important;
+            }
+        }
+}
+@media screen and (max-width: 514px) {
+    main{
+        .carousel{
+        width: 380px !important;
+        } 
+    }   
+}
+
+@media screen and (max-width: 435px) {
+    main{
+        .titulo{
+            font-size: 30px;
+        }
+        .carousel{
+            width: 320px !important;
+        } 
+    }
+}
+@media screen and (max-width: 405px) {
+    main{
+        .descripcionIndex{
+            font-size: 10px;
+        }
+        .carousel{
+            width: 300px !important;
+        } 
+    }
+}
+@media screen and (max-width: 340px) {
+    main{
+        .titulo{
+            font-size: 15px;
+        }
+        .carousel{
+            width: 270px !important;
+        }
+    }
+}

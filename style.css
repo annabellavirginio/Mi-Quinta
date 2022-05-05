@@ -9,13 +9,12 @@ header{
     grid-column: 1/4;
     height: 250px;
 }
-
-.nav-link:hover{
-    color: rgb(139, 183, 59) !important;
-}
 .nav-link{
     color: black !important;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav-link:hover{
+    color: rgb(139, 183, 59) !important;
 }
 .iconofacebook{
     width: 40px;
@@ -24,21 +23,6 @@ header{
 .logoquinta{
     width: 200px;
     margin: auto;
-}
-/* .barraNav__lista{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%;
-    margin: auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-} */
-a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-header a:hover{
-    color: rgb(113, 193, 56);
 }
 .titulo{
     color: black;
@@ -50,14 +34,7 @@ header a:hover{
     font-size: 17px;
     padding-bottom: 40px;
 }
-section.container.container__index{
-    padding: 0%;
-    margin: auto;
-}
-.row__carousel{
-    width: fit-content;
-    margin: auto; 
-}
+
 .carousel{
     margin: auto;
     width: 600px;
@@ -94,17 +71,6 @@ footer{
     position: relative;
     flex-direction: column
     
-}
-.tituloFooter{
-    text-align: center;
-    font-family: "Prata";
-    font-size: 25px;
-    margin-top: 20px;
-}
-.mainIndex__fotos{
-    grid-column: 1/4;
-    margin: auto;
-    margin-top: 50px;
 }
 .fotohome{
     width: 360px;
@@ -235,9 +201,6 @@ img.fotoeventos{
 
 }
 @media screen and (max-width: 1145px) {
-    .bodyIndex{
-        height: 1000px;
-    }
     .logofooter{
         width: 20%;
         display: flex;
@@ -252,17 +215,6 @@ img.fotoeventos{
     .bodyEventos{
         display: block;
     }
-    .header1{
-        grid-row: 1/2;
-        width: auto;
-    }
-    header{
-        width: auto;
-    }
-    .mainIndex__contenido{
-        width: fit-content;
-        grid-row: 1/4;
-    }
     .col-sm-5{
         padding: 0%;
     }
@@ -272,19 +224,8 @@ img.fotoeventos{
 }
 
 @media screen and (max-width: 991px) {
-    .bodyIndex{
-        height: 900px;
-    }
     .bodyEventos{
         position: relative;
-    }
-    .header1{
-        height: 200px;
-        display: flex;
-    }
-    header{
-        height: 200px;
-        width: auto;
     }
     .logofooter{
         width: 30%;
@@ -317,25 +258,11 @@ img.fotoeventos{
         position: relative;
         display: inline;
     }
-    .mainIndex__contenido{
-        width: fit-content;
-        display: grid;
-    }
     .navbar{
         display: flex;
         position: absolute;
         align-items: center;
         padding: 5%;
-    }
-    .logoquinta{
-        display: flex;
-        position: relative;
-        width: 20%;
-        margin: auto;
-    }
-    
-    li{
-        padding: 4px;
     }
     .bodyInfo{
         height: 1000px;
@@ -364,7 +291,9 @@ img.fotoeventos{
     }
     img.fotogaleria{
         width: 330px;
+        margin: auto;
     }
+
     .bodyEventos{
         height: 1000px;
     }
@@ -386,29 +315,12 @@ img.fotoeventos{
     }
 }
 @media screen and (max-width: 767px) {
-    .bodyIndex{
-        height: 900px;
-    }
+ 
     .bodyEventos{
         position: relative;
     }
-    .header1{
-        height: 200px;
-        grid-row: 1/2;
-    }
-    header{
-        height: 200px;
-        width: auto;
-    }
-    section .container__index{
-        height: 700px; 
-    }
-    .row__carousel{
-        width: fit-content;
-        margin: auto; 
-    }
     .carousel{
-        width: 500px;
+        width: 300px;
     }
     .row.footer{
         display: flex;
@@ -431,23 +343,9 @@ img.fotoeventos{
         margin-top: 10px;
     
     }
-    a{
-        position: relative;
-        display: inline;
-    }
-    .mainIndex__contenido{
-        width: fit-content;
-    }
     .logoquinta{
         width: 20%;
         margin: auto;
-    }
-    .barraNav__lista{
-        display: block;
-        text-align: center;
-    }
-    li{
-        padding: 4px;
     }
     .bodyInfo{
         height: 1000px;
@@ -496,12 +394,6 @@ img.fotoeventos{
 
 }
 @media screen and (max-width: 700px) {
-    .bodyIndex{
-        height: 900px;
-    }
-    .header1{
-        height: 200px;
-    }
     img.logofooter{
         width: 45%;
     }
@@ -515,22 +407,12 @@ img.fotoeventos{
 
 }
 @media screen and (max-width: 577px) {
-    .bodyIndex{
-        height: 800px;
-    }
     .bodyEventos{
         position: relative;
     }
-    .header1{
-        height: 150px;
-    }
     header{
-        height: 200px;
+        height: 250px;
         width: auto;
-    }
-    .row{
-        display: flex;
-        padding: 0%;
     }
     .col-sm-2{
         padding: 0%;
@@ -566,45 +448,12 @@ img.fotoeventos{
         font-size: smaller;
         padding-top: 10px;
     }
-    section .container__index{
-        width: 400px; 
-        margin: auto;
-    }
-    .carousel{
-        width: 400px;
-    }
-    .row__carousel{
-        width: fit-content;
-        margin: auto; 
-    }
-    .carousel__container{
-        width: fit-content;
-        padding: 0%;
-    }
     .iconofacebook{
         margin: 15px;
-    }
-    a{
-        position: relative;
-        display: inline;
-    }
-    .mainIndex__contenido{
-        width: fit-content;
-        display: grid;
     }
     .logoquinta{
         width: 150px;
         margin: auto;
-    }
-    .barraNav__lista{
-        display: block;
-        text-align: center;
-    }
-    li{
-        padding: 4px;
-    }
-    .fotohome{
-        width: 280px;
     }
     .bodyInfo{
         height: 1000px;
@@ -655,11 +504,8 @@ img.fotoeventos{
     .bodyEventos{
         position: relative;
     }
-    .header1{
-        height: 200px;
-    }
     header{
-        height: 200px;
+        height: 250px;
         width: auto;
     }
     img.logofooter{
@@ -668,23 +514,9 @@ img.fotoeventos{
         justify-content: center;
         align-items: center;
     }
-    .mainIndex__contenido{
-        width: fit-content;
-        display: grid;
-    }
     .logoquinta{
         width: 30%;
         margin: auto;
-    }
-    .barraNav__lista{
-        display: block;
-        text-align: center;
-    }
-    li{
-        padding: 4px;
-    }
-    .fotohome{
-        width: 280px;
     }
     .bodyInfo{
         height: 1300px;
@@ -729,6 +561,9 @@ img.fotoeventos{
     }
 }
 @media screen and (max-width: 514px) {
+    .carousel{
+        width: 400px;
+    } 
     .bodyGaleria{
     height: 1000px;
     }
@@ -741,11 +576,8 @@ img.fotoeventos{
 }
 @media screen and (max-width: 435px) {
     .titulo{
-        font-size: 30px;
+        font-size: 40px;
     }
-    .carousel{
-        width: 350px;
-    } 
     .tituloInfo{
         font-size: 30px;
     }
@@ -757,14 +589,11 @@ img.fotoeventos{
         }  
 }
 @media screen and (max-width: 405px) {
-    .titulo{
-        font-size: 30px;
-    }
     .descripcionIndex{
         font-size: 10px;
     }
     .carousel{
-        width: 300px;
+        width: 350px;
     } 
     .tituloInfo{
         font-size: 30px;
@@ -781,9 +610,6 @@ img.fotoeventos{
   
     .bodyEventos{
         position: relative;
-    }
-    .header1{
-        height: 150px;
     }
     header{
         height: 200px;
@@ -806,20 +632,9 @@ img.fotoeventos{
         position: relative;
         display: inline;
     }
-    .mainIndex__contenido{
-        width: fit-content;
-        display: grid;
-    }
     .logoquinta{
         width: 40%;
         margin: auto;
-    }
-    .barraNav__lista{
-        display: block;
-        text-align: center;
-    }
-    li{
-        padding: 4px;
     }
     .fotohome{
         width: 280px;
@@ -870,7 +685,7 @@ img.fotoeventos{
 @media screen and (max-width: 340px) {
 
     .carousel{
-        width: 270px;
+        width: 300px;
     }
 
 
