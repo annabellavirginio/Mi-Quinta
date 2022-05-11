@@ -10,7 +10,7 @@ header{
     }
     .nav-link{
         color: black !important;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: map-get($tipografia, navbar);
             &:hover{
                 color: rgb(139, 183, 59) !important;
             }

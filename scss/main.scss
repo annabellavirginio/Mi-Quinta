@@ -3,3 +3,8 @@
 @import "./componentes/header";
 @import "./componentes/contenido";
 @import "./componentes/footer";
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+@font-face {
+    font-family: "RobotoLight";
+    src: url(../fonts/RobotoSlab-Light.ttf);
+}

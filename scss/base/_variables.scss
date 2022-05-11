@@ -1,0 +1,19 @@
+
+$tipografia:(
+    titulo: 'Roboto Slab',
+    parrafo:'RobotoLight',
+    navbar:('Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif)
+    );
+
+
+%flex-relative{
+    display: flex;
+    position: relative;
+}
+
+@mixin flexbox ($flex-direction, $justify, $align){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify;
+    align-items: $align;
+}

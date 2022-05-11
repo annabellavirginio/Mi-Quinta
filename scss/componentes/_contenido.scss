@@ -1,11 +1,11 @@
 main{
     .titulo{
         color: black;
-        font-family: "Prata";
-        font-size: 40px; 
+        font-family: map-get($tipografia, titulo);
+        font-size: 30px; 
     }
     .descripcionIndex{
-        font-family: "Prata";
+        font-family: map-get($tipografia, parrafo);
         font-size: 17px;
         padding-bottom: 40px;
     }

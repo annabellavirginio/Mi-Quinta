@@ -3,23 +3,17 @@ footer{
     background-color: rgb(182, 225, 245);
     margin-top: 40px;
     .row__footer{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        @include flexbox(row, space-between, center);
         .logofooter{
             width: 20%;
-            display: flex;
-            position: relative;
+            @extend %flex-relative;
             justify-content: center;
             align-items: center;
             margin-left: 20px;
         }
         .footer__logos{
             list-style: none;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
+            @include flexbox(row, space-evenly, center);
             margin-bottom: 10px;
             .iconofacebook{
                 width: 40px;
@@ -27,8 +21,6 @@ footer{
             }
         }
         .footer__contacto{
-            display: flex;
-            position: relative;
             flex-direction: column;
             p{
                 margin-top: 0%;
