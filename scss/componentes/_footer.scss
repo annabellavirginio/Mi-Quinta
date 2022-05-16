@@ -1,11 +1,11 @@
 footer{
     position: relative;
-    background-color: rgb(182, 225, 245);
+    background-color: rgb(240, 246, 217);
     margin-top: 40px;
     .row__footer{
         @include flexbox(row, space-between, center);
         .logofooter{
-            width: 20%;
+            width: 100px;
             @extend %flex-relative;
             justify-content: center;
             align-items: center;
@@ -33,7 +33,7 @@ footer{
 @media screen and (max-width: 1145px) {
     footer{    
         .logofooter{
-            width: 20%;
+            width: 140px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -51,7 +51,7 @@ footer{
             display: flex;
             justify-content: center;
             img.logofooter{
-                width: 30%;
+                width: 100px;
                 padding: 0%;
                 display: inline;
                 justify-content: center;
@@ -83,7 +83,7 @@ footer{
             display: flex;
             justify-content: center;
             img.logofooter{
-                width: 30%;
+                width: 100px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -192,11 +192,11 @@ footer{
 @media screen and (max-width: 320px) {
     footer{
         display: flex;
-        .logofooter{
-            width: 20%;
+        img.logofooter{
+            width: 250px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
     }
-} 
+}

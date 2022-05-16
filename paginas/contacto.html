@@ -7,13 +7,13 @@
         <meta name="keywords" content="quinta, alquiler, contacto, contactanos, ubicacion, eventos, buenos aires, vacaciones, pileta, moreno">
         <meta name="description" content="Mi Quinta, alquiler y eventos especiales. Nos encontramos en Provincia de Buenos Aires. Villa Trujuy, Moreno. Contactanos y visitanos">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="../style.css">
-        <link rel="shortcut icon" href="./imagenes/LogoMockUp.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="shortcut icon" href="../imagenes/logoquinta.png" type="image/x-icon">
         <title>Contactanos</title>
     </head>
 <body class="bodyContacto">
     <header>
-        <img src="../imagenes/LogoMockUp.png" alt="logo" class="logoquinta">
+        <img src="../imagenes/logoquinta.png" alt="logo" class="logoquinta">
         <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
             <div class="containet-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,33 +32,44 @@
           </nav>
     </header>
     <main> 
-        <h1 class="text-center titulo my-5">CONTACTO</h1>
-        <section class="contacto">
-        <h2 class="subtitulo1"> RESERVAS</h2>
-         <p class="textoreservas"> Para Información o reservas escribinos un correo a <br> miquintaalquiler@gmail.com</p>
-        </section>
-        <section class="ubicacion">
-         <h2 class="subtitulo2"> UBICACIÓN </h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4436072929734!2d-58.745738184859135!3d-34.592942480462376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc96048126dcfb%3A0xa048ccf64c69e2f2!2sTeodoro%20Fels%207266%2C%20B1736BAC%20Trujui%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1sen!2ses!4v1649328211360!5m2!1sen!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+        <h1 class="text-center titulo my-5">UBICACIÓN Y CONTACTO</h1>
+        <section class="cards__contacto">
+        <div class="row card cards__contacto" style="max-width: 500px;">
+          <div class="g-0">
+            <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4436072929734!2d-58.745738184859135!3d-34.592942480462376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc96048126dcfb%3A0xa048ccf64c69e2f2!2sTeodoro%20Fels%207266%2C%20B1736BAC%20Trujui%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1sen!2ses!4v1649328211360!5m2!1sen!2ses" width="498" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Ubicación</h5>
+                <p class="card-text">Teodoro Fels 7266, Villa Trujuy. Moreno, Provincia de Buenos Aires.</p>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Contacto</h5>
+                <p class="card-text">Para Información o reservas podes escribirnos a: miquintaalquiler@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="conteiner-fluid footer">
-        <div class="row footer">
-            <div class="col-lg-4 col-md-4 col-sm-4">
-             <img src="../imagenes/LogoMockUp.png" alt="logo" class="logofooter">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 footer__logos">
-                 <a href="http://www.facebook.com/eventosmiquinta" target="_blank"> <img src="../imagenes/facebook.png" alt="logo facebook" class="iconofacebook"> </a>
-                 <a href="http://www.instagram.com/miquintaalquiler" target="_blank"> <img src="../imagenes/instagram.png" alt="logo instagram" class="iconofacebook"> </a></li>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <div class="footer__contacto">
-                    <p>011 15-4997-6728</p>
-                    <p>Teodoro Fels 7266</p>
-                </div>
-            </div>
-        </div>
+      <div class="row__footer">
+          <div class="col-lg-3 col-md-4 col-sm-4 contenedor__footer__logo">
+           <img src="../imagenes/logoquinta.png" alt="logo" class="logofooter">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4 footer__logos">
+           <a href="http://www.facebook.com/eventosmiquinta" target="_blank"> <img src="../imagenes/facebook.png" alt="logo facebook" class="iconofacebook"> </a>
+           <a href="http://www.instagram.com/miquintaalquiler" target="_blank"> <img src="../imagenes/instagram.png" alt="logo instagram" class="iconofacebook"> </a></li>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4 footer__contacto">
+              <div class="datos">
+                  <p>011 15-4997-6728</p>
+                  <p>Teodoro Fels 7266</p>
+              </div>
+          </div>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    </body>
 </html>

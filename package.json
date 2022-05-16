@@ -1,7 +1,7 @@
 {
   "name": "mi-quinta",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mi Quinta, Alquiler para Eventos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

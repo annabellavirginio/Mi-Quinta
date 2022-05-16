@@ -3,11 +3,26 @@ main{
         color: black;
         font-family: map-get($tipografia, titulo);
         font-size: 30px; 
+        padding-top: 40px;
     }
     .descripcionIndex{
         font-family: map-get($tipografia, parrafo);
         font-size: 17px;
         padding-bottom: 40px;
+    }
+    .card-img-top{
+        height: 300px;
+    }
+    .fotogaleria{
+        margin:  10px;
+        width: 400px;
+    }
+    .row{
+        --bs-gutter-x: 0%;
+        justify-content: center;
+    }
+    .fotoeventos{
+        width: 420px;
     }
     section{
         .row__carousel{
@@ -18,6 +33,55 @@ main{
             margin: auto;
             width: 600px;
         }
+        .row__cards{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            }
+            .card{
+                margin: auto;
+            }
+            .conteiner{
+                margin: auto;
+            }
+    }
+}
+@media screen and (max-width: 1399px) {   
+    main{
+        .fotogaleria{
+            width: 350px;
+        }
+        .fotoeventos{
+            width: 360px;
+        }
+    }
+}
+@media screen and (max-width: 1199px) {   
+    main{
+        .fotogaleria{
+            width: 300px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        .fotoeventos{
+            width: 300px;
+        }
+    }
+}
+@media screen and (max-width: 991px) {   
+    main{
+        .row__cards{
+            padding-bottom: 15px;
+        }
+        .fotoeventos{
+            width: 750px;
+            margin-bottom: 20px;
+        }
+        .my-5{
+            margin-top: 0% !important;
+        }
     }
 }
 @media screen and (max-width: 767px) {   
@@ -26,24 +90,51 @@ main{
                 margin: auto;
                 width: 450px !important;
             }
+        .row__galeria{
+            --bs-gutter-x: 10px;
         }
-}
+        }
+
+    }
+    @media screen and (max-width: 574px) {
+        main{
+            .fotogaleria{
+            width: 380px;
+            display: flex;
+            align-items: center;
+            } 
+        }   
+    }
 @media screen and (max-width: 514px) {
     main{
         .carousel{
         width: 380px !important;
         } 
+        .cards__contacto{
+            width: 400px;
+            margin: auto;
+        }
     }   
+    iframe{
+        width: 400px;
+    }
 }
 
 @media screen and (max-width: 435px) {
     main{
         .titulo{
-            font-size: 30px;
+            font-size: 25px;
         }
         .carousel{
             width: 320px !important;
         } 
+        .cards__contacto{
+            width: 330px;
+            margin: auto;
+        }
+    }   
+    iframe{
+        width: 330px;
     }
 }
 @media screen and (max-width: 405px) {
@@ -59,10 +150,17 @@ main{
 @media screen and (max-width: 340px) {
     main{
         .titulo{
-            font-size: 15px;
+            font-size: 20px;
         }
         .carousel{
             width: 270px !important;
         }
+        .cards__contacto{
+            width: 300px;
+            margin: auto;
+        }
+    }   
+    iframe{
+        width: 300px;
     }
-}
+    }
