@@ -4,14 +4,35 @@ main{
         font-family: map-get($tipografia, titulo);
         font-size: 30px; 
         padding-top: 40px;
-    }
+        }
     .descripcionIndex{
         font-family: map-get($tipografia, parrafo);
         font-size: 17px;
         padding-bottom: 40px;
-    }
+        }
     .card-img-top{
         height: 300px;
+        }
+    .contenedor__imagen img{
+        -webkit-filter: grayscale(100%);
+	    filter: grayscale(100%);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        overflow: hidden !important;
+        }
+    .fotogaleria:hover {
+        -webkit-filter: grayscale(0%);
+	    filter: grayscale(0%);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        overflow: hidden !important;
+        }
+        .contenedor__imagen{
+            overflow: hidden;
+            border-radius: 5px;
+        }
     }
     .fotogaleria{
         margin:  10px;
@@ -20,6 +41,11 @@ main{
     .row{
         --bs-gutter-x: 0%;
         justify-content: center;
+    }
+    .descripcionEventos{
+        font-family: map-get($tipografia, parrafo);
+        font-size: 17px;
+        padding-bottom: 40px;
     }
     .fotoeventos{
         width: 420px;
@@ -47,7 +73,6 @@ main{
                 margin: auto;
             }
     }
-}
 @media screen and (max-width: 1399px) {   
     main{
         .fotogaleria{
@@ -75,6 +100,10 @@ main{
         .row__cards{
             padding-bottom: 15px;
         }
+        .contenedor__imagen{
+            width: 320px;
+            height: 245px;
+        }
         .fotoeventos{
             width: 750px;
             margin-bottom: 20px;
@@ -92,17 +121,35 @@ main{
             }
         .row__galeria{
             --bs-gutter-x: 10px;
+            }
+        .contenedor__imagen{
+            width: 420px;
+            height: 325px;
+            }
+        .fotogaleria{
+            width: 400px;
         }
         }
 
     }
-    @media screen and (max-width: 574px) {
+    @media screen and (max-width: 575px) {
         main{
             .fotogaleria{
             width: 380px;
             display: flex;
             align-items: center;
             } 
+            .descripcionIndex{
+                padding: 45px;
+                padding-top: 10px;
+            }
+            .descripcionEventos{
+                font-size: 14px;
+                padding-bottom:35px;
+            }
+            .titulo{
+                padding-top: 45px;
+            }
         }   
     }
 @media screen and (max-width: 514px) {
@@ -114,6 +161,9 @@ main{
             width: 400px;
             margin: auto;
         }
+        .titulo{
+            font-size: 25px;
+        }
     }   
     iframe{
         width: 400px;
@@ -123,19 +173,26 @@ main{
 @media screen and (max-width: 435px) {
     main{
         .titulo{
-            font-size: 25px;
+            font-size: 20px;
+        }
+        .descripcionIndex{
+            padding-top: 0%;
         }
         .carousel{
             width: 320px !important;
-        } 
+        }
+        .titulo_galeria{
+            font-size: 30px;
+        }
         .cards__contacto{
             width: 330px;
             margin: auto;
         }
+        iframe{
+            width: 330px;
+            height: 330px;
+        }
     }   
-    iframe{
-        width: 330px;
-    }
 }
 @media screen and (max-width: 405px) {
     main{
@@ -145,6 +202,10 @@ main{
         .carousel{
             width: 300px !important;
         } 
+        iframe{
+            width: 300px;
+            height: 300px;
+            }
     }
 }
 @media screen and (max-width: 340px) {
@@ -155,12 +216,28 @@ main{
         .carousel{
             width: 270px !important;
         }
+        .contenedor__imagen{
+            height: 250px;
+        }
         .cards__contacto{
             width: 300px;
             margin: auto;
         }
-    }   
-    iframe{
-        width: 300px;
+        iframe{
+            width: 300px;
+            height: 300px;
+            }
+        }   
     }
+    @media screen and (max-width: 320px) {
+        main{
+            .row__cards{
+                width: 280px;
+            }
+        }
+        iframe{
+            width: 298px;
+            height: 300px;
+            }
     }
+    

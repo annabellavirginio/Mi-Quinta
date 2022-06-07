@@ -1,7 +1,6 @@
 header{
     background: linear-gradient(to bottom,rgb(220, 231, 199),white );
     display: grid;
-    grid-column: 1/4;
     height: 250px;
     
     .logoquinta{
@@ -9,10 +8,16 @@ header{
         margin: auto;
         padding-top: 30px;
         padding-bottom: 50px;
-        padding-left: 10px;
+        padding-left: 30px;
     }
     .navbar{
-        background-color: rgb(240, 246, 217);
+        background-color: rgb(240, 246, 217);  
+    }
+    .navbar-nav{
+        padding-left: 13px;
+    }
+    .navbar-collapse{
+        justify-content: center;
     }
     .nav-link{
         color: black !important;
@@ -21,12 +26,9 @@ header{
                 color: rgb(139, 183, 59) !important;
             }
     }
-    .navbar-light .navbar-toggler{
-        border-color: rgba(0, 0, 0, 0.85);
-    }
-    .navbar-light .navbar-toggler  .navbar-toggler-icon {
+    .navbar-light .navbar-toggler .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        stroke: black;
+        stroke: rgb(0, 0, 0);
     }
 }
 
@@ -36,47 +38,99 @@ header{
             display: flex;
             position: absolute;
             align-items: center;
-            padding: 5%;
+            padding-top: 3%;
+            padding-left: 2%;
             background-color: transparent !important;
         }
-        .black-toggler.navbar-toggler-icon{
-            border-color: black;
-        
+        .navbar-light .navbar-toggler {
+            color: transparent;
         }
-        .logoquinta{
-            display: flex;
-            position: relative;
-            margin: auto;
-            padding-bottom: 0%;
-        } 
     }
 }
-@media screen and (max-width: 577px) {
+@media screen and (max-width: 678px) {
     header{
         height: 250px;
         width: auto;
         .nav-link{
-            font-size: 10px;
+            font-size: 15px;
         }
+        .logoquinta{
+            width: 350px;
+        }
+    }
+}
+@media screen and (max-width: 577px) {
+    header{
+        height: 150px;
+        width: auto;
+        .navbar{
+            padding-top: 8%;
+            padding-left: 5%;
+        }
+        .nav-link{
+            font-size: 13px;
+        }
+        .logoquinta{
+            width: 200px;
+            margin-right: 20px;
+            margin-top: 1px;        }
     }
 }
 @media screen and (max-width: 444px) {
     header{
-        height: 250px;
+        height: 150px;
         width: auto;
-        .logoquinta{
-            width: 300px;
-            margin: auto;
+        .navbar{
+            padding-top: 8%;
+            padding-left: 5%;
         }
+        .nav-link{
+            font-size: 13px;
+        }
+        .logoquinta{
+            width: 200px;
+            margin-right: 20px;
+            margin-top: 1px;        }
+    }
+}
+@media screen and (max-width: 386px) {
+    header{
+        height: 150px;
+        width: auto;
+        .navbar{
+            padding-top: 8%;
+            padding-left: 5%;
+        }
+        .nav-link{
+            font-size: 13px;
+        }
+        .logoquinta{
+            width: 170px;
+            margin-right: 20px;
+            margin-top: 1px;        }
     }
 }
 @media screen and (max-width: 320px) {
     header{
-        height: 200px;
+        height: 130px;
         width: auto;
-        .logoquinta{
-            width: 250px;
-            margin: auto;
+        .navbar{
+            padding-top: 10%;
+            padding-left: 5%;
         }
+        .navbar-toggler-icon{
+            width: 25px;
+        }
+        .navbar-light .navbar-toggler {
+            color: transparent;
+        }
+        .nav-link{
+            font-size: 10px;
+            padding: 2%;
+        }
+        .logoquinta{
+            width: 150px;
+            margin-right: 20px;
+            }
     }
 }
